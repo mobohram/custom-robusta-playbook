@@ -1,5 +1,6 @@
 from robusta.api import *
 from robusta.core import *
+from robusta.core.reporting.blocks import TableBlockFormat
 import logging
 from typing import List
 
