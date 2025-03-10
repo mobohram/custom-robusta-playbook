@@ -1,6 +1,11 @@
-from robusta.api import action, PrometheusKubernetesAlert, MarkdownBlock, FileBlock
-from my_playbook_repo.params.log_filter_params import LogFilterParams
+from robusta.api import *
+from log_filter_params import LogFilterParams
 import logging
+from typing import List
+
+class LogFilterParams(ActionParams):
+    keywords: List[str]
+
 
 @action
 def send_filtered_logs(alert: PrometheusKubernetesAlert, params: LogFilterParams):
