@@ -1,5 +1,4 @@
 from robusta.api import *
-from log_filter_params import LogFilterParams
 import logging
 from typing import List
 
