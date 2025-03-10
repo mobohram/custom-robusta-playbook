@@ -1,0 +1,10 @@
+
+[tool.poetry]
+name = "my_playbook_repo"
+version = "0.1.0"
+description = "Custom Robusta playbook actions"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+robusta = "*"
