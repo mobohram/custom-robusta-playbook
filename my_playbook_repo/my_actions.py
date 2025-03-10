@@ -1,4 +1,5 @@
 from robusta.api import *
+from robusta.core import *
 import logging
 from typing import List
 
@@ -29,8 +30,6 @@ def send_filtered_logs(alert: PrometheusKubernetesAlert, params: LogFilterParams
     )
     
     labels = alert.alert.labels
-    
-    print("Custom action, labels:", labels)
     
     desired_labels = {"app", "pod", "type"}
     
